@@ -4,14 +4,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Vidx</title>
     <script src="script.js" defer></script>
+    <link rel="stylesheet" href="output.css">
 </head>
 
-<body>
-    <button id="createRoomBtn">Create Room</button><br>
-    <input type="text" id="joinRoomId">
-    <button id="JoinRoomBtn">Join Room</button>
+<body class="h-screen flex flex-col justify-center align-center">
+
+    <div class="flex flex-col gap-2 m-auto border p-4 rounded-md">
+        <h1 class="text-4xl font-black text-center">VIDX</h1>
+        <button id="createRoomBtn" class="px-4 py-2 bg-yellow-400 text-yellow-950 rounded-md">Create Room</button><br>
+        <div class="flex gap-2">
+            <input type="text" id="joinRoomId" class="focus:outline-none border px-2 rounded-md" placeholder="Enter Room ID">
+            <button id="JoinRoomBtn" class="px-4 py-2 bg-yellow-400 text-yellow-950 rounded-md">Join Room</button>    
+    
+        </div>
+
+    </div>
+
     <script>
         document.getElementById('createRoomBtn').addEventListener('click', () => {
             window.location.href = "/create";

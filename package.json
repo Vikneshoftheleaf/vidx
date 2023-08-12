@@ -2,17 +2,11 @@
   "name": "zoom-clone",
   "version": "1.0.0",
   "description": "",
-  "main": "app.js",
-  "engines": {
-    "node": "18.x"
-},
-"scripts": {
-  "deploy": "vercel --prod",
-  "push": "vercel",
-  "login": "vercel login",
-  "start": "node app.js",
-  "watch": "npx tailwindcss -i ./public/input.css -o ./public/output.css --watch"
-},
+  "main": "index.js",
+  "scripts": {
+    "devStart": "nodemon server.js",
+    "tw": "npx tailwindcss -i ./public/input.css -o ./public/output.css --watch"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
@@ -23,6 +17,7 @@
     "uuid": "^8.3.2"
   },
   "devDependencies": {
-    "nodemon": "^2.0.22"
+    "nodemon": "^2.0.22",
+    "tailwindcss": "^3.3.3"
   }
 }
