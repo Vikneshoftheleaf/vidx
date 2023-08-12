@@ -7,6 +7,8 @@ undefined, {
   port: '3000'
 }
 */
+
+
 const myVideo = document.createElement('video')
 myVideo.muted = true
 const peers = {}
@@ -64,3 +66,4 @@ function addVideoStream(video, stream) {
   })
   videoGrid.append(video)
 }
+
