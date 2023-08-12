@@ -2,7 +2,7 @@
   "name": "zoom-clone",
   "version": "1.0.0",
   "description": "",
-  "main": "server.js",
+  "main": "app.js",
   "engines": {
     "node": "18.x"
 },
@@ -10,7 +10,7 @@
   "deploy": "vercel --prod",
   "push": "vercel",
   "login": "vercel login",
-  "start": "node server.js",
+  "start": "node app.js",
   "watch": "npx tailwindcss -i ./public/input.css -o ./public/output.css --watch"
 },
   "keywords": [],
