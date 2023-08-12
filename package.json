@@ -3,9 +3,16 @@
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
-  "scripts": {
-    "devStart": "nodemon server.js"
-  },
+  "engines": {
+    "node": "18.x"
+},
+"scripts": {
+  "deploy": "vercel --prod",
+  "push": "vercel",
+  "login": "vercel login",
+  "start": "node server.js",
+  "watch": "npx tailwindcss -i ./public/input.css -o ./public/output.css --watch"
+},
   "keywords": [],
   "author": "",
   "license": "ISC",
