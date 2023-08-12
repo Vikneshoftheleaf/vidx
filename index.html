@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <button id="createRoomBtn">Create Room</button><br>
+    <input type="text" id="joinRoomId">
+    <button id="JoinRoomBtn">Join Room</button>
+    <script>
+        document.getElementById('createRoomBtn').addEventListener('click', () => {
+            window.location.href = "/create";
+        })
+        document.getElementById('JoinRoomBtn').addEventListener('click', () => {
+            const joinroomid = document.getElementById('joinRoomId').value;
+            window.location.href = `${joinroomid}`;
+        })
+    </script>
+</body>
+
+</html>
